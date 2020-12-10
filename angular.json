@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dinnerlistfront"
+    }
+  },
+  "defaultProject": "dinnerlistfront",
+  "cli": {
+    "analytics": "d488640d-ae8e-4c58-bc19-611e0f019056"
+  }
 }
