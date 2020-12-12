@@ -1,1 +1,14 @@
-<p>active-list works!</p>
+<h2>Nåværende liste</h2>
+<button mat-button [matMenuTriggerFor]="menu">Meny</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Ny liste</button>
+  <button mat-menu-item>Legg til rett</button>
+</mat-menu>
+<mat-list>
+  <mat-list-item *ngFor="let dish of dishes">
+    <h3 matLine>{{ dish }}</h3>
+    <p matLine>Dag</p>
+    <p matLine class="demo-2">Annet</p>
+    <mat-divider [inset]="true"></mat-divider>
+  </mat-list-item>
+</mat-list>

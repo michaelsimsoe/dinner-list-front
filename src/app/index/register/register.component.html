@@ -1,0 +1,21 @@
+<form #form="ngForm" novalidate>
+  <mat-form-field appearance="standard">
+    <mat-label>E-post</mat-label>
+    <input name="email" ngModel matInput placeholder="E-post" />
+    <mat-icon matSuffix>email</mat-icon>
+    <mat-hint>En e-post takk</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="standard">
+    <mat-label>Passord</mat-label>
+    <input name="password" ngModel matInput placeholder="Password" />
+    <mat-icon matSuffix>lock</mat-icon>
+    <mat-hint>Et trygt ett</mat-hint>
+  </mat-form-field>
+  <button
+    (click)="submitRegister(form.value.email, form.value.password)"
+    mat-raised-button
+    color="primary"
+  >
+    Primary
+  </button>
+</form>
